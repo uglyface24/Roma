@@ -1,20 +1,19 @@
 
-import { GoogleGenAI } from "@google/genai";
+// Gemini API removed - using pre-written romantic messages instead
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const romanticMessages = [
+  "You've made me the happiest person alive! I can't wait to spend Valentine's Day with you. ❤️",
+  "From the moment you said yes, my heart soared. You're my everything, and I promise to cherish every moment we share together. 💕",
+  "My heart beats only for you. Thank you for choosing me to be your Valentine. Let's make this day unforgettable! 🌹",
+  "You've filled my world with love and light. Being your Valentine is the greatest gift I could ever receive. 💖",
+  "Every moment with you feels like a dream come true. I'm so grateful you said yes! Happy Valentine's Day, my love! 💘"
+];
 
 export const generateRomanticMessage = async (name: string): Promise<string> => {
-  try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
-      contents: `Write a short, incredibly sweet, and slightly poetic message for a girl named ${name} who just agreed to be my Valentine. Keep it under 60 words and make it feel personal and heartfelt.`,
-      config: {
-        temperature: 0.9,
-      }
-    });
-    return response.text || "I am the luckiest person in the world to have you. ❤️";
-  } catch (error) {
-    console.error("Error generating message:", error);
-    return "You've made me the happiest person alive! I can't wait to spend Valentine's Day with you. ❤️";
-  }
+  // Simulate a brief loading delay for authenticity
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  
+  // Return a random romantic message
+  const randomIndex = Math.floor(Math.random() * romanticMessages.length);
+  return romanticMessages[randomIndex];
 };

@@ -33,7 +33,7 @@ class AudioService {
     };
     
     // Using the direct download link for the Google Drive file provided by the user
-    const driveFileId = 'https://drive.google.com/uc?export=download&id=1Fc9N7P0TN6GyKN0KZ6i9mkp3bH8xHKP7';
+    const driveFileId = '1Fc9N7P0TN6GyKN0KZ6i9mkp3bH8xHKP7';
     const directLink = `https://docs.google.com/uc?export=download&id=${driveFileId}`;
     
     this.musicElement = new Audio(directLink);

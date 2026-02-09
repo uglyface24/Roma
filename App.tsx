@@ -82,8 +82,8 @@ const App: React.FC = () => {
   };
 
   // High-reliability GIFs
-  const askingGif = "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZDFrcG1peDg0eTBvYXh0amxodTUxODd6cG1tdnB3enc4OTJwZGQ3YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/AXhbp00D9dxF9BCqpn/giphy.gif"; 
-  const successGif = "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MGZtOHNxNWJyN2R2d2F0ejRrbzE3dHJieTl6NGVvbmZ3YjJvcjRwZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ANjMpBvC9LeRUopsoU/giphy.gif";
+  const askingGif = "https://i.giphy.com/v1.Y2lkPTc5MGI3NjExM3ZkMHJ6bWd2M3N6ZzBnbXpsZGg3ZzN6ZzBnbXpsZGg3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/c76IJLufpN96/giphy.gif"; 
+  const successGif = "https://i.giphy.com/v1.Y2lkPTc5MGI3NjExM3ZkMHJ6bWd2M3N6ZzBnbXpsZGg3ZzN6ZzBnbXpsZGg3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/TdfyKrN7HGTIY/giphy.gif";
 
   return (
     <div 
